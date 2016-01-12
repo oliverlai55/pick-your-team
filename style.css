@@ -1,16 +1,31 @@
-    .container {
-      border: 1px dashed #CCC;
-      position: relative;
-    }
+.container {
+  border: 1px dashed #CCC;
+  position: relative;
+}
 
-    .container > div {
-      background: #AAA;
-      position: absolute;
-      height: 100px;
-      width: 100px;
-    }
+.container > div {
+  background: #AAA;
+  position: absolute;
+  height: 135px;
+  width: 100px;
+}
 
-    .container > .ss-placeholder-child {
-      background: transparent;
-      border: 1px dashed blue;
-    }
+.container > .ss-placeholder-child {
+  background: transparent;
+  border: 1px dashed gray;
+}
+
+#messi-stats {
+  position: absolute;
+  display: none;
+  width: 150px;
+  height: 80px;
+  top: 60%;
+  text-align: center;
+ /* line-height: 80px;*/
+}
+
+#messi-stats a {
+  color: white;
+  text-decoration: none;
+}
