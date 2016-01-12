@@ -8,17 +8,17 @@ $(document).ready(function() {
     $("#messi-stats").fadeToggle(); 
   });
 
-  // ======== Skills Functions ==========
-var aboutColor = $('#skills').css('color');
-    $('.chart').each(function(){
-        $(this).easyPieChart({
-            size:170,
-            animate: 1500,
-            lineCap:'butt',
-            scaleColor: false,
-            barColor: aboutColor,
-            lineWidth: 10
-        });
-    });
+
+    jQuery('.skillbar').each(function() {
+      jQuery(this).appear(function() {
+        jQuery(this).find('.count-bar').animate({
+          width:jQuery(this).attr('data-percent')
+        },1000);
+        var percent = jQuery(this).attr('data-percent');
+        jQuery(this).find('.count').html('<span>' + percent + '</span>');
+      });
+    }); 
+
+
 
 });
