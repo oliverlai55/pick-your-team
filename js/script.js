@@ -1,8 +1,6 @@
 $(document).ready(function() {
-	console.log("helo1");
    	$(".container").shapeshift();
-   	console.log("hello");
-
+ 
    	//Fade Toggle
   $("#messi").click(function () {
     $("#messi-stats").fadeToggle(); 
